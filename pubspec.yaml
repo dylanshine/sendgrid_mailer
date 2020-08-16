@@ -1,6 +1,6 @@
 name: sendgrid_mailer
 description: A Dart library used to compose and send emails using SendGrid v3 Mail Send API.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/dylanshine/sendgrid_mailer
 
 
