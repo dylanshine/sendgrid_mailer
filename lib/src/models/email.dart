@@ -1,4 +1,4 @@
-import 'package:sendgrid_mailer/src/models/Attachment.dart';
+import 'package:sendgrid_mailer/src/models/attachment.dart';
 import 'package:sendgrid_mailer/src/models/address.dart';
 import 'package:sendgrid_mailer/src/models/advanced_suppression_manager.dart';
 import 'package:sendgrid_mailer/src/models/content.dart';
