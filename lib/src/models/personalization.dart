@@ -1,4 +1,4 @@
-import 'package:sendgrid_mailer/models/address.dart';
+import 'package:sendgrid_mailer/src/models/address.dart';
 
 class Personalization {
   const Personalization(
@@ -23,12 +23,12 @@ class Personalization {
 
   Map<String, dynamic> toJson() => {
         'to': to.map((e) => e.toJson()).toList(),
-        'cc': cc.map((e) => e.toJson()).toList(),
-        'bcc': bcc.map((e) => e.toJson()).toList(),
+        'cc': cc?.map((e) => e.toJson())?.toList(),
+        'bcc': bcc?.map((e) => e.toJson())?.toList(),
         'subject': subject,
         'headers': headers,
         'substitutions': substitutions,
         'custom_args': customArgs,
-        'send_at': sendAt.toUtc().millisecondsSinceEpoch,
+        'send_at': sendAt?.toUtc()?.millisecondsSinceEpoch,
       };
 }

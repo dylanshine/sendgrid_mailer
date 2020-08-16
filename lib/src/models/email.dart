@@ -1,10 +1,10 @@
-import 'package:sendgrid_mailer/models/Attachment.dart';
-import 'package:sendgrid_mailer/models/address.dart';
-import 'package:sendgrid_mailer/models/advanced_suppression_manager.dart';
-import 'package:sendgrid_mailer/models/content.dart';
-import 'package:sendgrid_mailer/models/mail_settings.dart';
-import 'package:sendgrid_mailer/models/personalization.dart';
-import 'package:sendgrid_mailer/models/tracking_settings.dart';
+import 'package:sendgrid_mailer/src/models/Attachment.dart';
+import 'package:sendgrid_mailer/src/models/address.dart';
+import 'package:sendgrid_mailer/src/models/advanced_suppression_manager.dart';
+import 'package:sendgrid_mailer/src/models/content.dart';
+import 'package:sendgrid_mailer/src/models/mail_settings.dart';
+import 'package:sendgrid_mailer/src/models/personalization.dart';
+import 'package:sendgrid_mailer/src/models/tracking_settings.dart';
 
 class Email {
   const Email(
@@ -46,19 +46,19 @@ class Email {
   Map<String, dynamic> toJson() => {
         'personalizations': personalizations.map((e) => e.toJson()).toList(),
         'from': from.toJson(),
-        'reply_to': replyTo.toJson(),
+        'reply_to': replyTo?.toJson(),
         'subject': subject,
         'content': content.map((e) => e.toJson()).toList(),
-        'attachments': attachments.map((e) => e.toJson()).toList(),
+        'attachments': attachments?.map((e) => e.toJson())?.toList(),
         'template_id': templateId,
         'headers': headers,
         'categories': categories,
         'customArgs': customArgs,
-        'send_at': sendAt.toUtc().millisecondsSinceEpoch,
+        'send_at': sendAt?.toUtc()?.millisecondsSinceEpoch,
         'batch_id': batchId,
-        'asm': asm.toJson(),
+        'asm': asm?.toJson(),
         'ip_pool_name': ipPoolName,
-        'mail_settings': mailSettings.toJson(),
-        'tracking_settings': trackingSettings.toJson(),
+        'mail_settings': mailSettings?.toJson(),
+        'tracking_settings': trackingSettings?.toJson(),
       };
 }

@@ -1,6 +1,6 @@
-import 'package:sendgrid_mailer/models/boolean_setting.dart';
-import 'package:sendgrid_mailer/models/footer.dart';
-import 'package:sendgrid_mailer/models/spam_check.dart';
+import 'package:sendgrid_mailer/src/models/boolean_setting.dart';
+import 'package:sendgrid_mailer/src/models/footer.dart';
+import 'package:sendgrid_mailer/src/models/spam_check.dart';
 
 class MailSettings {
   const MailSettings({
