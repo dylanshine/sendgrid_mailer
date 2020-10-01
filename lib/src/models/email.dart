@@ -10,8 +10,8 @@ class Email {
   const Email(
     this.personalizations,
     this.from,
-    this.content,
     this.subject, {
+    this.content,
     this.replyTo,
     this.attachments,
     this.templateId,
