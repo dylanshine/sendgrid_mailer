@@ -10,6 +10,7 @@ class Personalization {
     this.substitutions,
     this.customArgs,
     this.sendAt,
+    this.dynamicTemplateData,
   });
 
   final List<Address> to;
@@ -20,6 +21,7 @@ class Personalization {
   final Map<String, String> substitutions;
   final Map<String, String> customArgs;
   final DateTime sendAt;
+  final Map<String, dynamic> dynamicTemplateData;
 
   Map<String, dynamic> toJson() => {
         'to': to.map((e) => e.toJson()).toList(),
@@ -30,5 +32,6 @@ class Personalization {
         'substitutions': substitutions,
         'custom_args': customArgs,
         'send_at': sendAt?.toUtc()?.millisecondsSinceEpoch,
+        'dynamic_template_data': dynamicTemplateData,
       };
 }

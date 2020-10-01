@@ -48,7 +48,7 @@ class Email {
         'from': from.toJson(),
         'reply_to': replyTo?.toJson(),
         'subject': subject,
-        'content': content.map((e) => e.toJson()).toList(),
+        'content': content?.map((e) => e.toJson())?.toList(),
         'attachments': attachments?.map((e) => e.toJson())?.toList(),
         'template_id': templateId,
         'headers': headers,
