@@ -1,3 +1,7 @@
+## [0.1.2] - October 1st, 2020.
+
+* Add support for sending dynamic templates.
+
 ## [0.1.1] - August 16th, 2020.
 
 * Fix attachment import statement.
