@@ -19,7 +19,7 @@ main() async {
   final subject = 'Hello Subject!';
   final personalization = Personalization(toAddress);
   
-  final email = Email([personalization], fromAddress, content, subject);
+  final email = Email([personalization], fromAddress, [content], subject);
     
   mailer.send(email).then((result) => {
   	...
