@@ -18,7 +18,7 @@ class Mailer {
     headers['Content-Type'] = 'application/json';
 
     final response = await http.post(
-      _apiURL,
+      Uri.parse(_apiURL),
       headers: headers,
       body: jsonEncode(email.toJson()),
     );

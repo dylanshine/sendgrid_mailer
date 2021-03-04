@@ -6,10 +6,10 @@ class SubscriptionTracking {
     this.substitutionTag,
   });
 
-  final bool enable;
-  final String text;
-  final String html;
-  final String substitutionTag;
+  final bool? enable;
+  final String? text;
+  final String? html;
+  final String? substitutionTag;
 
   Map<String, dynamic> toJson() => {
         'enable': enable,

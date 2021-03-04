@@ -8,12 +8,12 @@ class GoogleAnalytics {
     this.utmCampaign,
   });
 
-  final bool enable;
-  final String utmSource;
-  final String utmMedium;
-  final String utmTerm;
-  final String utmContent;
-  final String utmCampaign;
+  final bool? enable;
+  final String? utmSource;
+  final String? utmMedium;
+  final String? utmTerm;
+  final String? utmContent;
+  final String? utmCampaign;
 
   Map<String, dynamic> toJson() => {
         'enable': enable,
