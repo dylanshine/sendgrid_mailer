@@ -10,10 +10,10 @@ class MailSettings {
     this.spamCheck,
   });
 
-  final BooleanSetting bypassManagementList;
-  final Footer footer;
-  final BooleanSetting sandboxMode;
-  final SpamCheck spamCheck;
+  final BooleanSetting? bypassManagementList;
+  final Footer? footer;
+  final BooleanSetting? sandboxMode;
+  final SpamCheck? spamCheck;
 
   Map<String, dynamic> toJson() => {
         'bypass_list_management': bypassManagementList,

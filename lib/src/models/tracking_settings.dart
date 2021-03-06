@@ -11,10 +11,10 @@ class TrackingSettings {
     this.ganalytics,
   });
 
-  final ClickTracking clickTracking;
-  final OpenTracking openTracking;
-  final SubscriptionTracking subscriptionTracking;
-  final GoogleAnalytics ganalytics;
+  final ClickTracking? clickTracking;
+  final OpenTracking? openTracking;
+  final SubscriptionTracking? subscriptionTracking;
+  final GoogleAnalytics? ganalytics;
 
   Map<String, dynamic> toJson() => {
         'click_tracking': clickTracking?.toJson(),

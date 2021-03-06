@@ -9,9 +9,9 @@ class Attachment {
 
   final String content;
   final String filename;
-  final String type;
-  final String disposition;
-  final String contentId;
+  final String? type;
+  final String? disposition;
+  final String? contentId;
 
   Map<String, dynamic> toJson() => {
         'content': content,

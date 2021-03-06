@@ -5,9 +5,9 @@ class SpamCheck {
     this.postToURL,
   });
 
-  final bool enable;
-  final int threshhold;
-  final String postToURL;
+  final bool? enable;
+  final int? threshhold;
+  final String? postToURL;
 
   Map<String, dynamic> toJson() => {
         'enable': enable,

@@ -7,24 +7,21 @@
 ## Example
 
 ```dart
-import 'package:sendgrid_mailer/sendgrid_mailer.dart' as sg;
+import 'package:sendgrid_mailer/sendgrid_mailer.dart';
 
 main() async {
-
-  final mailer = sg.Mailer(<<YOUR_API_KEY>>);
-  
+  final mailer = Mailer('<<YOUR_API_KEY>>');
   final toAddress = Address('to@example.com');
   final fromAddress = Address('from@example.com');
   final content = Content('text/plain', 'Hello World!');
   final subject = 'Hello Subject!';
-  final personalization = Personalization(toAddress);
-  
-  final email = Email([personalization], fromAddress, [content], subject);
-    
-  mailer.send(email).then((result) => {
-  	...
-  })	
-    
+  final personalization = Personalization([toAddress]);
+
+  final email =
+      Email([personalization], fromAddress, subject, content: [content]);
+  mailer.send(email).then((result) {
+    // ...
+  });
 }
 ```
 

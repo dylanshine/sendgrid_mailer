@@ -4,8 +4,8 @@ class ClickTracking {
     this.enableText,
   });
 
-  final bool enable;
-  final bool enableText;
+  final bool? enable;
+  final bool? enableText;
 
   Map<String, dynamic> toJson() => {
         'enable': enable,

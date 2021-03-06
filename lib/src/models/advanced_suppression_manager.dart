@@ -5,7 +5,7 @@ class AdvancedSuppressionManager {
   });
 
   final int groupId;
-  final List<int> groupsToDisplay;
+  final List<int>? groupsToDisplay;
 
   Map<String, dynamic> toJson() => {
         'group_id': groupId,

@@ -14,11 +14,11 @@ class SendGridError {
         errorId = json['error_id'],
         parameter = json['parameter'];
 
-  final String message;
-  final String field;
-  final String help;
-  final String errorId;
-  final String parameter;
+  final String? message;
+  final String? field;
+  final String? help;
+  final String? errorId;
+  final String? parameter;
 
   @override
   String toString() {

@@ -5,9 +5,9 @@ class Footer {
     this.html,
   });
 
-  final bool enable;
-  final String text;
-  final String html;
+  final bool? enable;
+  final String? text;
+  final String? html;
 
   Map<String, dynamic> toJson() => {
         'enable': enable,
