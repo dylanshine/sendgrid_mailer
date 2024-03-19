@@ -1,3 +1,7 @@
+## Next
+
+* Updated the http dependency to 1.0.0, and the Dart SDK minimum to 3.0.0.
+
 ## [0.1.3] - March 11th, 2021.
 
 * Migrate to null safety
