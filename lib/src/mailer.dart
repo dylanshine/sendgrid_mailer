@@ -28,7 +28,7 @@ class Mailer {
     } else if (ResponseStatusCode.ERROR_CODES.contains(response.statusCode)) {
       final Map<String, dynamic> body = json.decode(response.body);
       return Result<void>.error(
-          body['errors'].map((e) => SendGridError.fromJson(e)));
+          body['errors'].map((e) => SendGridError.fromJson(e)).toList());
     } else {
       return Result<void>.error(
         [
