@@ -8,6 +8,6 @@ environment:
 
 dependencies:
   async: ^2.5.0
-  http: ^1.2.1
+  http:
 
 dev_dependencies:
